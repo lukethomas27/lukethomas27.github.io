@@ -1,212 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Luke Thomas - Software Engineer and UVic Co-op Student">
-    <title>Luke Thomas - Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Inter', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #2d3436;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #2d3436;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        nav {
-            margin: 1rem 0;
-        }
-        nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #74b9ff;
-        }
-        section {
-            padding: 3rem 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        h1, h2 {
-            color: #2d3436;
-        }
-        .profile-section {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #74b9ff;
-        }
-        .contact-info {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        .contact-info a {
-            color: #2d3436;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .contact-info a:hover {
-            color: #74b9ff;
-        }
-        .project {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-            transition: transform 0.3s ease;
-        }
-        .project:hover {
-            transform: translateY(-5px);
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        .skill-category {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .experience-item {
-            margin-bottom: 2rem;
-        }
-        .experience-item h3 {
-            color: #2d3436;
-            margin-bottom: 0.5rem;
-        }
-        .experience-item .date {
-            color: #636e72;
-            font-style: italic;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            background-color: #2d3436;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Luke Thomas</h1>
-        <p>Software Engineer | UVic Co-op Student</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+# Luke Thomas - Portfolio Website
 
-    <section id="about">
-        <div class="profile-section">
-            <img src="profile-placeholder.jpg" alt="Luke Thomas" class="profile-image">
-            <div>
-                <h2>About Me</h2>
-                <p>I'm a Software Engineer and University of Victoria co-op student with expertise in optimizing full-stack web applications and delivering scalable, high-quality software solutions. I specialize in designing efficient data systems, enhancing performance, and creating impactful user experiences.</p>
-                <div class="contact-info">
-                    <a href="mailto:lukethomas@uvic.ca">lukethomas@uvic.ca</a>
-                    <a href="https://github.com/lukethomas27">GitHub</a>
-                    <a href="https://www.linkedin.com/in/luke-thomas-0ba860237">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </section>
+This is my personal portfolio website hosted at [lukethomas27.github.io](https://lukethomas27.github.io). The website showcases my professional experience, skills, and projects as a Software Engineer and UVic Co-op student.
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="experience-item">
-            <h3>Full-Stack Software Developer Co-op</h3>
-            <p class="date">Siteability | January 2025 - Present</p>
-            <ul>
-                <li>Architected and modularized key NUXT 3 components in Vue to improve performance and usability</li>
-                <li>Independently developed product releases enabling pilot deployments in two new municipalities</li>
-                <li>Enhanced product compatibility from 80% to over 99% of properties in pilot municipalities</li>
-                <li>Collaborated in cross-functional teams using Nuxt 3 and TailwindCSS</li>
-            </ul>
-        </div>
-    </section>
+## Features
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="experience-item">
-            <h3>Bachelor of Science in Computer Science with Co-op</h3>
-            <p class="date">University of Victoria | Expected Fall 2026</p>
-            <ul>
-                <li>Key Coursework: Software Development, Algorithms, Database Systems, UI/UX Design, Operating Systems</li>
-                <li>Member of the UVic AI Club</li>
-            </ul>
-        </div>
-    </section>
+- Responsive design that works on all devices
+- Modern and clean user interface
+- Sections for:
+  - About Me
+  - Professional Experience
+  - Education
+  - Technical Skills
+  - Projects
+  - Contact Information
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <p>JavaScript (Proficient), Python (Proficient), C (Proficient), SQL, TypeScript, C++, Java, HTML, CSS</p>
-            </div>
-            <div class="skill-category">
-                <h3>Frameworks & Tools</h3>
-                <p>Vue, NUXT 3, React, Supabase, Tailwind CSS, PostgreSQL, NoSQL, Git, Turf.js</p>
-            </div>
-        </div>
-    </section>
+## Technologies Used
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Siteability Platform Enhancement</h3>
-            <p>Led the development of key features and optimizations for the Siteability platform, resulting in successful pilot deployments and improved user retention.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Geospatial Analysis with Turf.js</h3>
-            <p>An application leveraging Turf.js for advanced geographic data visualizations and analysis.</p>
-            <a href="#">View Project</a>
-        </div>
-    </section>
+- HTML5
+- CSS3
+- Responsive Design
+- Modern CSS Features (Grid, Flexbox, Transitions)
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me:</p>
-        <ul>
-            <li>Email: <a href="mailto:lukethomas@uvic.ca">lukethomas@uvic.ca</a></li>
-            <li>Phone: (778) 587-6804</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/luke-thomas-0ba860237">linkedin.com/in/luke-thomas-0ba860237</a></li>
-            <li>GitHub: <a href="https://github.com/lukethomas27">github.com/lukethomas27</a></li>
-        </ul>
-    </section>
+## Project Structure
 
-    <footer>
-        <p>&copy; 2024 Luke Thomas. All rights reserved.</p>
-    </footer>
+```
+.
+├── index.html          # Main HTML file
+├── styles.css          # CSS styles
+├── profile-placeholder.jpg  # Profile picture
+└── README.md           # This file
+```
 
-</body>
-</html>
+## Local Development
+
+To run this website locally:
+
+1. Clone the repository
+2. Open `index.html` in your web browser
+
+## Contact
+
+Feel free to reach out to me:
+
+- Email: lukethomas@uvic.ca
+- LinkedIn: [linkedin.com/in/luke-thomas-0ba860237](https://www.linkedin.com/in/luke-thomas-0ba860237)
+- GitHub: [github.com/lukethomas27](https://github.com/lukethomas27)
