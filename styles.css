@@ -83,6 +83,34 @@ h2 {
 }
 
 /* About section styles */
+.about-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.about-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
 .about-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -109,11 +137,66 @@ h2 {
     font-size: 1.2rem;
 }
 
+.story-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.company-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
 .experience-story, .education-story {
     margin-bottom: 2rem;
     padding: 1.5rem;
     background-color: var(--secondary-color);
     border-radius: 6px;
+}
+
+.experience-story h4, .education-story h4 {
+    color: var(--accent-color);
+    margin: 0;
+    font-size: 1.2rem;
+    flex: 1;
+    text-align: left;
+}
+
+.education-story p {
+    margin: 0.5rem 0;
+    color: var(--text-color);
+}
+
+.education-story strong {
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.education-story ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.education-story ul li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.education-story ul li::before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: -1.5rem;
+    font-size: 1.2rem;
 }
 
 /* Projects section styles */
@@ -153,14 +236,29 @@ h2 {
 
 .project-card {
     background-color: var(--card-background);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.project-image {
+    flex: 0 0 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-background);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .project-card h3 {
@@ -230,13 +328,16 @@ footer {
 
 /* Hero section styles */
 .hero {
-    background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)), url('header background.png');
+    background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.7)), url('images/header_background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
     margin-bottom: 3rem;
     position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero::before {
@@ -246,7 +347,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.95));
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.3), rgba(26, 26, 26, 0.6));
     z-index: 1;
 }
 
@@ -258,6 +359,7 @@ footer {
     gap: 4rem;
     position: relative;
     z-index: 2;
+    width: 100%;
 }
 
 .profile-image {
@@ -354,38 +456,9 @@ footer {
     margin: 0 auto;
 }
 
-.project-card {
-    background-color: var(--card-background);
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-}
-
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.project-image {
-    flex: 0 0 300px;
-    overflow: hidden;
-    position: relative;
-}
-
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover .project-image img {
-    transform: scale(1.05);
 }
 
 .project-content {
@@ -573,7 +646,12 @@ footer {
     height: 400px;
     object-fit: cover;
     border-radius: 12px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+video.main-image {
+    background-color: var(--card-background);
+    object-fit: contain;
 }
 
 .thumbnail-grid {
