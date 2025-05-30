@@ -253,6 +253,7 @@ h2 {
     align-items: center;
     justify-content: center;
     background-color: var(--card-background);
+    padding: 3rem;
 }
 
 .project-image img {
@@ -457,8 +458,7 @@ footer {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-content {
@@ -770,4 +770,27 @@ video.main-image {
     .project-section {
         padding: 1.5rem;
     }
+}
+
+.website-progress {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+}
+
+.website-progress p {
+    color: var(--text-secondary);
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.project-status {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
 } 
