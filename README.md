@@ -1,78 +1,24 @@
-# Luke Thomas - Portfolio Website
+# My Portfolio Website
 
-A modern, responsive portfolio website showcasing my work as a Software Engineer and UVic Co-op Student.
+Hey there! This is my personal portfolio website where I showcase my work as a Software Engineer and UVic Co-op Student. I built this site to share my projects and experiences in a clean, modern way.
 
-## Features
+## What's Here
 
-- **Modern Dark Theme**: Clean, professional dark theme with carefully chosen color palette
-- **Responsive Design**: Fully responsive layout that works on all devices
-- **Dynamic Hero Section**: Eye-catching hero section with background image and profile picture
-- **Interactive Elements**: Smooth hover effects and transitions throughout
-- **Font Awesome Integration**: Professional icons for social links and navigation
-- **Optimized Performance**: Fast loading and smooth animations
+- **Home**: A quick intro about me and what I do
+- **About**: My journey through school and work
+- **Projects**: Some cool stuff I've built
+- **Resume**: My latest resume for easy access
 
-## Pages
+## Tech Stack
 
-### Home
+- HTML5 & CSS3
+- Font Awesome for icons
+- Responsive design (works on all devices)
 
-- Dynamic hero section with background image
-- Professional profile picture display
-- Call-to-action buttons
-- Highlights section showcasing key skills
+## Get in Touch
 
-### About
-
-- Detailed professional journey
-- Education and experience sections
-- Personal interests and goals
-- Clean, readable layout
-
-### Projects
-
-- Featured projects showcase
-- Detailed project descriptions
-- Technology stack highlights
-- Interactive project cards
-
-## Technical Details
-
-### Technologies Used
-
-- HTML5
-- CSS3 (with CSS Variables)
-- Font Awesome 6.5.1
-- Responsive Design Principles
-
-### Design Features
-
-- CSS Variables for consistent theming
-- Flexbox and Grid layouts
-- Smooth transitions and animations
-- Mobile-first approach
-- Optimized images and assets
-
-### Color Scheme
-
-- Primary: #2a2a2a
-- Secondary: #3a3a3a
-- Accent: #4a9eff
-- Text: #ffffff
-- Background: #1a1a1a
-
-## Getting Started
-
-1. Clone the repository
-2. Open `index.html` in your browser
-3. Navigate through the pages using the navigation menu
-
-## Contact
-
-Feel free to reach out through any of the following channels:
+Feel free to reach out:
 
 - Email: lukethomas@uvic.ca
 - GitHub: [lukethomas27](https://github.com/lukethomas27)
 - LinkedIn: [Luke Thomas](https://www.linkedin.com/in/luke-thomas-0ba860237)
-
-## License
-
-This project is open source and available under the MIT License.
